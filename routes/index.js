@@ -5,7 +5,7 @@ var url = require('url');
 
 //var mqtt_url = process.env.CLOUDMQTT_URL || 'mqtt://localhost:1883';
 //var topic = process.env.CLOUDMQTT_TOPIC || 'test';
-var mqtt_url = process.env.CLOUDMQTT_URL || 'broker.hivemq:8000';
+var mqtt_url = process.env.CLOUDMQTT_URL || 'mqtt://broker.hivemq.com:8000';
 var topic = process.env.CLOUDMQTT_TOPIC || 'thongpoon/myTemp';
 
 var client = mqtt.connect(mqtt_url);
